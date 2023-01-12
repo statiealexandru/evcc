@@ -1,1 +1,235 @@
+[header]
+sessions = "Sesiuni de incarcare"
+settings = "Setari"
+docs = "Documentatie"
+blog = "Blog"
+github = "GitHub"
+login = "Autentificare Masini"
+about = "Despre"
 
+[settings]
+title = "Setari"
+
+[settings.theme]
+label = "Design"
+auto = "system"
+light = "Deschis"
+dark = "Inchis"
+
+[settings.language]
+label = "Limba"
+auto = "Automat"
+
+[settings.unit]
+label = "Unitati"
+km = "km"
+mi = "mile"
+
+[settings.telemetry]
+label = "Telemetrie"
+
+[footer.version]
+availableLong = "noua versiune disponibila"
+modalTitle = "Noua versiune disponibila"
+modalUpdateStarted = "Pornesc noua versiune evcc…"
+modalInstalledVersion = "Versiune instalata"
+modalNoReleaseNotes = "Nu exista note de release. Mai multe informatii despre noua versiune:"
+modalCancel = "Inchide"
+modalUpdate = "Instaleaza"
+modalUpdateNow = "Instaleaza acum"
+modalDownload = "Downloadeaza"
+modalUpdateStatusStart = "Instalare pornita:"
+
+[footer.savings]
+tabTitle = "Datele mele"
+footerShort = "{percent}% solar"
+footerLong = "{percent}% energie solara"
+modalTitle = "Overview Energie Incarcare"
+since = "de la {since}"
+percentTitle = "Energie Solara"
+percentSelf = "{self} kWh solar"
+percentGrid = "{grid} kWh retea"
+priceTitle = "Pret Energie"
+priceFeedIn = "{feedInPrice} feed-in"
+priceGrid = "{gridPrice} retea"
+savingsTitle = "Economii"
+savingsComparedToGrid = "comparat cu reteaua"
+savingsTotalEnergy = "{total} kWh incarcati"
+
+[footer.community]
+tabTitle = "Comunitate Live"
+power = "Putere incarcare"
+powerSub1 = "{activeClients} din {totalClients} participanti"
+powerSub2 = "incarca…"
+greenShare = "Procent solar"
+greenShareSub1 = "putere data de"
+greenShareSub2 = "solar, si sticare baterie"
+greenEnergy = "Solar"
+greenEnergySub1 = "incarcat cu evcc"
+greenEnergySub2 = "din Octombrie 2022"
+
+[footer.telemetry]
+optIn = "Vreau sa contribui cu datele mele."
+optInMoreDetails = "Mai multe detalii {0}."
+optInMoreDetailsLink = "aici"
+optInSponsorship = "Ai nevoie de token sponsor."
+
+[footer.sponsor]
+titleSponsor = "Esti sponsor"
+titleNoSponsor = "Ajuta-ne"
+thanks = "Multumim, {sponsor}! Contributia ta a ajutat la dezvoltarea evcc."
+confetti = "Pregatit pentru confetti?"
+supportUs = "Misiunea noastra este ca energia solara sa devina standardul. Ajuta evcc prin plata a cat crezi ca merita."
+sticker = "… sau stickere evcc?"
+confettiPromise = "Primesti stickere si confetti digital"
+becomeSponsor = "Devino Sponsor"
+
+[notifications]
+modalTitle = "Notificari"
+dismissAll = "Inchide tot"
+
+[main]
+vehicles = "Parcare"
+
+[main.energyflow]
+noEnergy = "Lipsa date contor"
+homePower = "Consum"
+pvProduction = "Productie"
+loadpoints = "Incarcator| Incarcator | {count} Incarcatoare"
+battery = "Baterie"
+batteryCharge = "Bateria se incarca"
+batteryDischarge = "Bateria se descarca"
+gridImport = "din Retea"
+selfConsumption = "Consum propriu"
+pvExport = "export Retea"
+
+[main.mode]
+off = "Oprit"
+minpv = "Min+Solar"
+pv = "Solar"
+now = "Rapid"
+
+[main.loadpoint]
+fallbackName = "Punct incarcare"
+remoteDisabledSoft = "{source}: oprit incarcare solara adaptiva"
+remoteDisabledHard = "{source}: oprit"
+power = "Putere"
+charged = "Incarcat"
+duration = "Durata"
+remaining = "Ramas"
+
+[main.loadpointSettings]
+title = "Setari {0}"
+vehicle = "Vehicule"
+currents = "Curent incarcare"
+default = "default"
+disclaimerHint = "Note:"
+disclaimerText = "Modificarile nu sunt salvate la restartarea serverului."
+
+[main.loadpointSettings.minSoc]
+label = "Procent minim incarcare"
+description = "Pentru urgente. Vehiculul primeste incarcare rapida {0}% din toata energia solara disponibila, apoi continua incarcarea cu surplusul solar."
+
+[main.loadpointSettings.phasesConfigured]
+label = "Faze"
+phases_0 = "auto-comutare"
+phases_1 = "1 faza"
+phases_1_hint = "({min} la {max})"
+phases_3 = "3 faze"
+phases_3_hint = "({min} la {max})"
+
+[main.loadpointSettings.maxCurrent]
+label = "Amperaj maxim"
+
+[main.loadpointSettings.minCurrent]
+label = "Amperaj minim"
+
+[main.vehicle]
+fallbackName = "Vehicul"
+vehicleSoc = "Incarcare"
+targetSoc = "Limita"
+none = "Lipsa Vehicul"
+unknown = "Vehicul musafir"
+changeVehicle = "Schimba Vehicul"
+detectionActive = "Detectare vehicul…"
+
+[main.vehicleSoc]
+disconnected = "deconectat"
+charging = "incarca"
+ready = "gata"
+connected = "conectat"
+vehicleTarget = "Limita vehicul: {soc}%"
+
+[main.vehicleStatus]
+minCharge = "Incarcare minima la {soc}%."
+waitForVehicle = "Pregatit. Astept dupa vehicul…"
+vehicleTargetReached = "Limita vehicul {soc}% atinsa."
+charging = "Incarca…"
+targetChargePlanned = "Incarcarea porneste la {time}."
+targetChargeWaitForVehicle = "Incarcare terminata. Astept dupa vehicul…"
+targetChargeActive = "Incarcare activa…"
+connected = "conectat."
+pvDisable = "Surplus insuficient. Pauza in {remaining}…"
+pvEnable = "Surplus suficient. Pornesc in {remaining}…"
+scale1p = "Reducem puterea la 1 faza in {remaining}…"
+scale3p = "Marim puterea la 3 faze in {remaining}…"
+disconnected = "Deconectat."
+unknown = ""
+
+[main.provider]
+login = "Autentificare"
+logout = "log out"
+
+[main.targetCharge]
+title = "Timp targetat"
+inactiveLabel = "Timp targetat"
+activeLabel = "{time}"
+modalTitle = "Setare timp targetat"
+setTargetTime = "none"
+description = "Cand ar trebui vehiculul sa fie incarcat la {targetSoc}%?"
+today = "azi"
+tomorrow = "maine"
+targetIsInThePast = "Alege un timp in viitor, Costele."
+remove = "Scoate"
+activate = "Activeaza"
+experimentalLabel = "Experimental"
+experimentalText = "Functioneaza, dar nu e perfect inca. Te rog raporteaza orice comportament neateptat la"
+
+[main.targetEnergy]
+label = "Limita"
+noLimit = "none"
+
+[startupError]
+title = "Eroare la Start"
+description = "Te rog sa verifici fisierul de configuratie. Daca mesajul de eroare nu ajuta, verifica {0}."
+discussions = "Discutii GitHub"
+hint = "Nota: E posibil sa ai un device defect (invertor, contor, …).Verifica conexiunile la retea."
+configuration = "Config"
+configFile = "Fisier configurare:"
+lineError = "Eroare la {0}."
+lineErrorLink = "linia {0}"
+fixAndRestart = "Te rog repara eroarea si restarteaza serverul."
+restartButton = "Restart"
+
+[sessions]
+title = "Sesiuni incarcare"
+downloadCsv = "Downloadeaza ca CSV"
+loadpoint = "Punct incarcare"
+vehicle = "Vehicul"
+energy = "Incarcat"
+date = "Perioada"
+
+[sessions.csv]
+loadpoint = "Punct de incarcare"
+vehicle = "Vehicul"
+odometer = "Kilometraj (km)"
+identifier = "Identificator"
+chargedenergy = "Energie (kWh)"
+meterstart = "Start contor (kWh)"
+meterstop = "Stop contor (kWh)"
+created = "Creat"
+finished = "Terminat"
+
+[offline]
+message = "Nu se poate conecta la server."
+reload = "Reincarca?"
